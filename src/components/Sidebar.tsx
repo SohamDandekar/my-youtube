@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useAppSelector } from "../hooks/useAppSelector";
 
 const Sidebar = () => {
@@ -9,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className="w-48 shadow-lg p-5 mx-4">
       <ul>
-        <li>Home</li>
+        <li><Link to="/">Home</Link></li>
         <li>Shorts</li>
       </ul>
       <h1 className="font-bold pt-5">Subscriptions</h1>
